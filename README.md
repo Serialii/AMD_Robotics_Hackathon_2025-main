@@ -65,39 +65,46 @@ graph TD
 
 ```
 
-### Dataset Capture & Training* **Hardware Used:** SO-101 Leader-Follower setup and Dual Camera System.
+### Dataset Capture & Training
+* **Hardware Used:** SO-101 Leader-Follower setup and Dual Camera System.
 * **Training:** Performed on the **AMD MI300X GPU Cluster** using the LeRobot framework.
 * **ACT Policy:** Action Chunking Transformer was used for its superior performance in sequence modeling.
 * **Strategic Policy Split:** Separate policies were trained for each object to maximize **giving stability**, but a single generalized policy was used for **taking** objects back to maximize training efficiency.
 
-### Inference Stack* **Platform:** Dell Pro Max 16 Laptop (Ryzen AI 9 HX 370).
+### Inference Stack
+* **Platform:** Dell Pro Max 16 Laptop (Ryzen AI 9 HX 370).
 * **LLM:** **Ollama (Llama 3.2)** provides rapid, local conversational intelligence.
 * **Handoff Safety:** MediaPipe runs in parallel to ensure the robot waits for an appropriate hand presence before releasing the object.
 * **Interface:** Custom, production-ready **Streamlit UI** for visualization, control, and status monitoring.
 
-## 4. Ease of Use and Generalizability ⚙️###Multi-Interface ControlJARVIS provides maximum flexibility for the user:
-
+## 4. Ease of Use and Generalizability ⚙️
+### Multi-Interface ControlJARVIS provides maximum flexibility for the user:
 * **Voice:** The primary mode; hands-free operation.
 * **Text:** Type commands in the UI for noisy environments.
 * **Buttons:** One-click shortcuts for accessibility or quick demos.
 
-### Extensibility (Generalizability)The system is designed to be easily expanded without retraining the entire policy architecture:
-
+### Extensibility (Generalizability)
+The system is designed to be easily expanded without retraining the entire policy architecture:
 * **Adding New Objects (e.g., *screwdriver*):**
 1. Record \sim50 new demonstration episodes.
 2. Train a new, small LeRobot policy for the object.
 3. Register the new policy path and object keyword in the Orchestrator.
 
 
-* **Adaptability:** Camera indices, USB ports, and recognition sensitivities are all adjustable via the configuration file.
+* **Adaptability:**
+* Camera indices, USB ports, and recognition sensitivities are all adjustable via the configuration file.
 
-### No Code Required for End UserThe end user interacts entirely through the intuitive visual interface or voice. The system features a clear UI with a real-time visualization of hand detection, command history, and a prominent **One-Click Emergency Stop**.
+### No Code Required for End User
+The end user interacts entirely through the intuitive visual interface or voice. The system features a clear UI with a real-time visualization of hand detection, command history, and a prominent **One-Click Emergency Stop**.
 
-## 🛠️ Installation & Setup###Prerequisites* Ubuntu 22.04+
+## 🛠️ Installation & Setup
+### Prerequisites
+* Ubuntu 22.04+
 * Python 3.10+
 * Required hardware: SO-101 Robotic Arm, two USB cameras.
 
-### Local Setup```bash
+### Local Setup
+```bash
 # Clone the repository
 git clone https://github.com/Serialii/AMD_Robotics_Hackathon_2025_Jarvis
 cd jarvis_robotics
