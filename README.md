@@ -1,14 +1,15 @@
 
-##JARVIS: Just A Rather Very Intelligent System###Collaborative AI Assistant using LeRobot and AMD MI300X---
+##JARVIS: Just A Rather Very Intelligent System###Collaborative AI Assistant using LeRobot and AMD MI300X
 
 ##Demo Video 
-**[Watch JARVIS in Action Here!](https://www.google.com/search?q=link_to_demo_video)**|
+**[Watch JARVIS in Action Here!](https://www.google.com/search?q=link_to_demo_video)**
 
 *Video highlights: Conversational command \rightarrow Safe hand detection handoff \rightarrow Assembly sequence \rightarrow Fist bump celebration \rightarrow Tic-Tac-Toe.*
 
 ---
 
 ##Project Summary
+
 JARVIS transforms the SO-101 robotic arm into an intuitive, multi-modal coworker. Our system's core mission is to protect human workflow and focus in high-precision environments. Instead of relying on buttons or complex code, JARVIS allows users to request tools and components using **natural voice commands**.
 
 **The JARVIS Difference:** It doesn't just execute; it collaborates. It sees your hand (MediaPipe) for a safe handoff, hears your commands (Google Speech Recognition), and responds contextually with personality (Llama 3.2), making human-robot interaction natural, safe, and even enjoyable.
