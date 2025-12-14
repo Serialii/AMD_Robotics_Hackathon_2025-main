@@ -81,15 +81,15 @@ graph TD
 * **Strategic Policy Split:** Separate policies were trained for each object to maximize **giving stability**, but a single generalized policy was used for **taking** objects back to maximize training efficiency.
 
 For mission 1: 
-model [https://huggingface.co/Abubakar17/so101-policy]
-dataset [https://huggingface.co/datasets/Abubakar17/record-test-5]
+[model] (https://huggingface.co/Abubakar17/so101-policy)
+[dataset] (https://huggingface.co/datasets/Abubakar17/record-test-5)
 
 For mission 2:
 There were 2 ways to inference to deal with the inference
  1. model orchestration
  2. policy orchestration
 
-We tried both methods and all the datasets and models can be found here[https://huggingface.co/Abubakar17]
+We tried both methods and all the datasets and models can be found [here](https://huggingface.co/Abubakar17)
 
 
 ### Inference Stack
