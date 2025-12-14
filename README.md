@@ -1,30 +1,120 @@
-# AMD_Robotics_Hackathon_2025-main
-The goal of this project was to develop a practical and helpful robotic companion capable of assisting with everyday tasks. We created Jarvis, a smart robotic arm designed to pick up objects, place them in designated locations, or hand them to a user upon request. Our primary focus was on creating a system that is intuitive, responsive, and reliable, providing meaningful assistance in everyday interactions.
 
-Scope of the project:
-1. Interact with our hand by giving and taking objects when we tell him to
-2. Tic-Tac-Toe
-3. Voice commands
+##🤖 JARVIS: Just A Rather Very Intelligent System###Collaborative AI Assistant using LeRobot and AMD MI300X---
 
-   
-## Project Workflow
+##🎬 Demo Video & Repository| Demo Video (Required) | Repository |
+| --- | --- |
+| **[Watch JARVIS in Action Here!](https://www.google.com/search?q=link_to_demo_video)** |
 
-The development of Jarvis followed a structured workflow, starting with data collection. We designed and collected a **custom dataset** capturing various object manipulation actions performed by the arm in different scenarios. This dataset provided the foundation for training our models, ensuring that Jarvis could generalize across multiple tasks.
-
-Using the dataset, we trained the robotic arm’s behavior with the tools provided by AMD and Hugging Face, leveraging pretrained models and policies to accelerate learning. These tools allowed us to integrate vision and language understanding with action control, enabling Jarvis to interpret both visual inputs and textual commands efficiently.
-
-After training, we combined the models into a modular system, where different specialized policies handle specific actions such as picking, placing, handing objects, greeting the user, or executing game-related moves for Tic Tac Toe. This modular design allows Jarvis to switch between tasks seamlessly.
-
-To make Jarvis easy and natural to interact with, we implemented a voice interface. Spoken commands are converted to text through a speech-to-text system, and the resulting instruction is interpreted to select the appropriate task. High-level commands such as “pick up,” “give me,” “let’s play,” or a simple greeting trigger the corresponding behavior, which is then executed by the robotic arm in real time.
+*Video highlights: Conversational command \rightarrow Safe hand detection handoff \rightarrow Assembly sequence \rightarrow Fist bump celebration \rightarrow Tic-Tac-Toe.*
 
 ---
 
-## Technical Highlights
+##💡 Project Summary
+JARVIS transforms the SO-101 robotic arm into an intuitive, multi-modal coworker. Our system's core mission is to protect human workflow and focus in high-precision environments. Instead of relying on buttons or complex code, JARVIS allows users to request tools and components using **natural voice commands**.
 
-The project utilized AMD’s development tools for model training and inference, combined with Hugging Face’s pretrained models and libraries for vision-language processing and speech-to-text functionality. By relying on these tools, we were able to focus on system integration and real-world usability rather than implementing low-level models from scratch.
+**The JARVIS Difference:** It doesn't just execute; it collaborates. It sees your hand (MediaPipe) for a safe handoff, hears your commands (Google Speech Recognition), and responds contextually with personality (Llama 3.2), making human-robot interaction natural, safe, and even enjoyable.
+
+##👥 Team Information| Detail | Value |
+| --- | --- |
+| **Team Name** | MasterBlasters |
+| **Team Number** | 16 |
+| **Members** | Syed Muhammad Abubakar, Eris Lala |
 
 ---
 
-## Conclusion
+##1. Mission Description: The Hands-Free Teammate 🤝###Real-World Application: Preserving Human FocusThe central use case is simple yet critical: preventing the loss of focus when a worker needs a tool. Imagine a surgeon, an assembly line technician, or an electronics maker who can request a tool without looking away from their delicate task.
 
-Jarvis demonstrates how off-the-shelf tools and pretrained models can be combined to create a modular and intelligent robotic assistant. By integrating manipulation, voice interaction, user awareness, and simple gameplay, Jarvis goes beyond a traditional robotic arm to become a more engaging companion. The separation of perception, decision-making, and execution layers ensures that the system is safe, adaptable, and scalable, allowing new tasks and interactions to be added easily. This project represents a meaningful step toward everyday robotic companions that interact naturally with humans.
+JARVIS addresses this need, enabling:
+
+* **Focus State Protection:** Hands-free retrieval of tools and components via voice commands.
+* **Proactive, Safe Collaboration:** The robot anticipates needs and uses real-time hand detection to ensure the object is only released into a ready human hand.
+* **Target Environments:** Manufacturing, automotive assembly, specialized workshops, surgical rooms, and research laboratories.
+
+##2. Creativity & Innovation ✨JARVIS sets a new standard for human-robot interaction by integrating **Personality** and **Multi-Modal Intelligence**.
+
+| Feature | Traditional Robots | JARVIS |
+| --- | --- | --- |
+| **Intelligence** | Single-modal (Vision OR Command) | **Multi-modal (Sees, Hears, Reads, Thinks)** |
+| **Socialization** | None | **Fist bumps, compliments, and playable games (Tic-Tac-Toe)** |
+| **Interaction** | Fixed Scripts/Buttons | **Natural Voice + LLM Conversational Fallback** |
+| **Handoff Safety** | Fixed location drop-off | **Dynamic, Hand-Detection Gated Release** |
+
+###Key Creative Innovations:* **The Personality Engine:** JARVIS is programmed with dynamic, personable reactions (e.g., "Your wish is my command!"), compliments ("Great grip!"), and 20+ easter egg responses, transforming a tool into a teammate.
+* **Orchestrated Policy Architecture:** We trained specialized LeRobot policies (ACT architecture) for specific actions (*give_box*, *fist_bump*, *take_from_hand*) and built an intelligent orchestrator to seamlessly select and switch between them based on LLM context.
+* **Gamification:** The ability to execute a celebratory **Fist Bump** and play **Tic-Tac-Toe** (fully implemented) showcases the system's potential for complex, non-industrial social interaction.
+
+##3. Technical Implementation###Architecture OverviewThe system runs on the Ryzen AI 9 HX 370, orchestrating multiple concurrent AI pipelines:
+
+```mermaid
+graph TD
+    A[User Input: Voice/Text] --> B(Command Parser + LLM Fallback);
+    B --> C{Policy Selector / Orchestrator};
+    subgraph Inference & Execution
+        C --> D(LeRobot ACT Policies: give_box, give_tape, fist_bump, etc.);
+        C --> E[MediaPipe Hand Detection / Safe Handoff Gate];
+        D --> F(SO-101 Execution);
+        E --> F;
+    end
+    F --> G(gTTS Voice Response / Sound Effects);
+    G --> A;
+
+```
+
+###Dataset Capture & Training* **Hardware Used:** SO-101 Leader-Follower setup and Dual Camera System.
+* **Training:** Performed on the **AMD MI300X GPU Cluster** using the LeRobot framework.
+* **ACT Policy:** Action Chunking Transformer was used for its superior performance in sequence modeling.
+* **Strategic Policy Split:** Separate policies were trained for each object to maximize **giving stability**, but a single generalized policy was used for **taking** objects back to maximize training efficiency.
+
+###Inference Stack* **Platform:** Dell Pro Max 16 Laptop (Ryzen AI 9 HX 370).
+* **LLM:** **Ollama (Llama 3.2)** provides rapid, local conversational intelligence.
+* **Handoff Safety:** MediaPipe runs in parallel to ensure the robot waits for an appropriate hand presence before releasing the object.
+* **Interface:** Custom, production-ready **Streamlit UI** for visualization, control, and status monitoring.
+
+##4. Ease of Use and Generalizability ⚙️###Multi-Interface ControlJARVIS provides maximum flexibility for the user:
+
+* **Voice:** The primary mode; hands-free operation.
+* **Text:** Type commands in the UI for noisy environments.
+* **Buttons:** One-click shortcuts for accessibility or quick demos.
+
+###Extensibility (Generalizability)The system is designed to be easily expanded without retraining the entire policy architecture:
+
+* **Adding New Objects (e.g., *screwdriver*):**
+1. Record \sim50 new demonstration episodes.
+2. Train a new, small LeRobot policy for the object.
+3. Register the new policy path and object keyword in the Orchestrator.
+
+
+* **Adaptability:** Camera indices, USB ports, and recognition sensitivities are all adjustable via the configuration file.
+
+###No Code Required for End UserThe end user interacts entirely through the intuitive visual interface or voice. The system features a clear UI with a real-time visualization of hand detection, command history, and a prominent **One-Click Emergency Stop**.
+
+##🛠️ Installation & Setup###Prerequisites* Ubuntu 22.04+
+* Python 3.10+
+* Required hardware: SO-101 Robotic Arm, two USB cameras.
+
+###Local Setup```bash
+# Clone the repository
+git clone https://github.com/Serialii/AMD_Robotics_Hackathon_2025_Jarvis
+cd jarvis_robotics
+
+# Create and activate environment
+conda create -n jarvis python=3.10
+conda activate jarvis
+
+# Install dependencies (including AMD-optimized libraries if applicable)
+pip install -r requirements.txt
+
+# Download model weights (optional, link provided for trained policies)
+# ... script to download trained ACT policies ...
+
+# Install Ollama and pull Llama 3.2 for local conversational AI
+# (Ollama setup instructions)
+
+# Run the UI
+streamlit run jarvis.py
+
+```
+
+---
+
+This README is comprehensive, structured, and emphasizes the unique, human-centric aspects of your project! Let me know if you would like to add any specific hardware/software logos or refine the setup instructions further.
