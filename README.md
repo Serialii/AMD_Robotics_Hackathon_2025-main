@@ -25,8 +25,9 @@ JARVIS transforms the SO-101 robotic arm into an intuitive, multi-modal coworker
 
 ---
 
-## 1. Mission Description: 
-The Hands-Free Teammate 🤝###Real-World Application: Preserving Human FocusThe central use case is simple yet critical: preventing the loss of focus when a worker needs a tool. Imagine a surgeon, an assembly line technician, or an electronics maker who can request a tool without looking away from their delicate task.
+## 1. Mission Description: The Hands-Free Teammate 🤝
+### Real-World Application: 
+Preserving Human FocusThe central use case is simple yet critical: preventing the loss of focus when a worker needs a tool. Imagine a surgeon, an assembly line technician, or an electronics maker who can request a tool without looking away from their delicate task.
 
 JARVIS addresses this need, enabling:
 * **Focus State Protection:** Hands-free retrieval of tools and components via voice commands.
