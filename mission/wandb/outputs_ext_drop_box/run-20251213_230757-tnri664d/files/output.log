@@ -1,0 +1,134 @@
+INFO 2025-12-13 23:07:57 db_utils.py:102 [1m[34mLogs will be synced with wandb.[0m
+INFO 2025-12-13 23:07:57 db_utils.py:103 Track this run --> [1m[33mhttps://wandb.ai/syedabubakar03-universit-de-technologie-de-compi-gne/lerobot/runs/tnri664d[0m
+INFO 2025-12-13 23:07:57 ot_train.py:183 Creating dataset
+INFO 2025-12-13 23:07:58 ot_train.py:202 Creating policy
+INFO 2025-12-13 23:07:58 ot_train.py:247 Creating optimizer and scheduler
+INFO 2025-12-13 23:07:58 ot_train.py:259 [1m[33mOutput dir:[0m outputs/train/act_so101_mission_2_ext_drop_box_output
+INFO 2025-12-13 23:07:58 ot_train.py:262 cfg.steps=15000 (15K)
+INFO 2025-12-13 23:07:58 ot_train.py:263 dataset.num_frames=29840 (30K)
+INFO 2025-12-13 23:07:58 ot_train.py:264 dataset.num_episodes=40
+INFO 2025-12-13 23:07:58 ot_train.py:267 Effective batch size: 16 x 1 = 16
+INFO 2025-12-13 23:07:58 ot_train.py:268 num_learnable_params=51597190 (52M)
+INFO 2025-12-13 23:07:58 ot_train.py:269 num_total_params=51597190 (52M)
+INFO 2025-12-13 23:07:58 ot_train.py:324 Start offline training on a fixed dataset
+INFO 2025-12-13 23:08:53 ot_train.py:351 step:200 smpl:3K ep:4 epch:0.11 loss:6.360 grdn:118.653 lr:1.0e-05 updt_s:0.177 data_s:0.097
+INFO 2025-12-13 23:09:27 ot_train.py:351 step:400 smpl:6K ep:9 epch:0.21 loss:2.625 grdn:60.661 lr:1.0e-05 updt_s:0.073 data_s:0.094
+INFO 2025-12-13 23:10:00 ot_train.py:351 step:600 smpl:10K ep:13 epch:0.32 loss:2.196 grdn:53.702 lr:1.0e-05 updt_s:0.074 data_s:0.094
+INFO 2025-12-13 23:10:34 ot_train.py:351 step:800 smpl:13K ep:17 epch:0.43 loss:1.893 grdn:49.397 lr:1.0e-05 updt_s:0.073 data_s:0.095
+INFO 2025-12-13 23:11:07 ot_train.py:351 step:1K smpl:16K ep:21 epch:0.54 loss:1.656 grdn:46.780 lr:1.0e-05 updt_s:0.073 data_s:0.090
+INFO 2025-12-13 23:11:40 ot_train.py:351 step:1K smpl:19K ep:26 epch:0.64 loss:1.451 grdn:44.427 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:12:13 ot_train.py:351 step:1K smpl:22K ep:30 epch:0.75 loss:1.265 grdn:41.454 lr:1.0e-05 updt_s:0.073 data_s:0.091
+INFO 2025-12-13 23:12:46 ot_train.py:351 step:2K smpl:26K ep:34 epch:0.86 loss:1.109 grdn:37.468 lr:1.0e-05 updt_s:0.073 data_s:0.094
+INFO 2025-12-13 23:13:20 ot_train.py:351 step:2K smpl:29K ep:39 epch:0.97 loss:0.986 grdn:36.436 lr:1.0e-05 updt_s:0.074 data_s:0.095
+INFO 2025-12-13 23:13:55 ot_train.py:351 step:2K smpl:32K ep:43 epch:1.07 loss:0.866 grdn:33.829 lr:1.0e-05 updt_s:0.074 data_s:0.100
+INFO 2025-12-13 23:13:55 ot_train.py:361 Checkpoint policy after step 2000
+INFO 2025-12-13 23:14:29 ot_train.py:351 step:2K smpl:35K ep:47 epch:1.18 loss:0.769 grdn:32.227 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:15:03 ot_train.py:351 step:2K smpl:38K ep:51 epch:1.29 loss:0.683 grdn:29.921 lr:1.0e-05 updt_s:0.074 data_s:0.094
+INFO 2025-12-13 23:15:37 ot_train.py:351 step:3K smpl:42K ep:56 epch:1.39 loss:0.607 grdn:28.130 lr:1.0e-05 updt_s:0.074 data_s:0.095
+INFO 2025-12-13 23:16:09 ot_train.py:351 step:3K smpl:45K ep:60 epch:1.50 loss:0.545 grdn:27.119 lr:1.0e-05 updt_s:0.073 data_s:0.090
+INFO 2025-12-13 23:16:43 ot_train.py:351 step:3K smpl:48K ep:64 epch:1.61 loss:0.494 grdn:25.318 lr:1.0e-05 updt_s:0.073 data_s:0.093
+INFO 2025-12-13 23:17:16 ot_train.py:351 step:3K smpl:51K ep:69 epch:1.72 loss:0.449 grdn:23.943 lr:1.0e-05 updt_s:0.074 data_s:0.090
+INFO 2025-12-13 23:17:48 ot_train.py:351 step:3K smpl:54K ep:73 epch:1.82 loss:0.414 grdn:22.853 lr:1.0e-05 updt_s:0.073 data_s:0.091
+INFO 2025-12-13 23:18:21 ot_train.py:351 step:4K smpl:58K ep:77 epch:1.93 loss:0.378 grdn:21.777 lr:1.0e-05 updt_s:0.073 data_s:0.088
+INFO 2025-12-13 23:18:55 ot_train.py:351 step:4K smpl:61K ep:82 epch:2.04 loss:0.354 grdn:20.802 lr:1.0e-05 updt_s:0.073 data_s:0.099
+INFO 2025-12-13 23:19:28 ot_train.py:351 step:4K smpl:64K ep:86 epch:2.14 loss:0.329 grdn:19.743 lr:1.0e-05 updt_s:0.073 data_s:0.088
+INFO 2025-12-13 23:19:28 ot_train.py:361 Checkpoint policy after step 4000
+INFO 2025-12-13 23:20:00 ot_train.py:351 step:4K smpl:67K ep:90 epch:2.25 loss:0.311 grdn:19.281 lr:1.0e-05 updt_s:0.074 data_s:0.082
+INFO 2025-12-13 23:20:32 ot_train.py:351 step:4K smpl:70K ep:94 epch:2.36 loss:0.292 grdn:18.072 lr:1.0e-05 updt_s:0.074 data_s:0.086
+INFO 2025-12-13 23:21:04 ot_train.py:351 step:5K smpl:74K ep:99 epch:2.47 loss:0.279 grdn:17.679 lr:1.0e-05 updt_s:0.074 data_s:0.085
+INFO 2025-12-13 23:21:37 ot_train.py:351 step:5K smpl:77K ep:103 epch:2.57 loss:0.266 grdn:16.680 lr:1.0e-05 updt_s:0.074 data_s:0.088
+INFO 2025-12-13 23:22:09 ot_train.py:351 step:5K smpl:80K ep:107 epch:2.68 loss:0.254 grdn:16.536 lr:1.0e-05 updt_s:0.074 data_s:0.088
+INFO 2025-12-13 23:22:41 ot_train.py:351 step:5K smpl:83K ep:112 epch:2.79 loss:0.245 grdn:16.107 lr:1.0e-05 updt_s:0.074 data_s:0.087
+INFO 2025-12-13 23:23:13 ot_train.py:351 step:5K smpl:86K ep:116 epch:2.90 loss:0.238 grdn:15.521 lr:1.0e-05 updt_s:0.074 data_s:0.088
+INFO 2025-12-13 23:23:47 ot_train.py:351 step:6K smpl:90K ep:120 epch:3.00 loss:0.230 grdn:15.351 lr:1.0e-05 updt_s:0.074 data_s:0.094
+INFO 2025-12-13 23:24:19 ot_train.py:351 step:6K smpl:93K ep:124 epch:3.11 loss:0.220 grdn:15.109 lr:1.0e-05 updt_s:0.075 data_s:0.084
+INFO 2025-12-13 23:24:51 ot_train.py:351 step:6K smpl:96K ep:129 epch:3.22 loss:0.215 grdn:15.297 lr:1.0e-05 updt_s:0.074 data_s:0.086
+INFO 2025-12-13 23:24:51 ot_train.py:361 Checkpoint policy after step 6000
+INFO 2025-12-13 23:25:24 ot_train.py:351 step:6K smpl:99K ep:133 epch:3.32 loss:0.211 grdn:14.508 lr:1.0e-05 updt_s:0.074 data_s:0.085
+INFO 2025-12-13 23:25:56 ot_train.py:351 step:6K smpl:102K ep:137 epch:3.43 loss:0.204 grdn:14.403 lr:1.0e-05 updt_s:0.074 data_s:0.087
+INFO 2025-12-13 23:26:28 ot_train.py:351 step:7K smpl:106K ep:142 epch:3.54 loss:0.201 grdn:13.670 lr:1.0e-05 updt_s:0.074 data_s:0.087
+INFO 2025-12-13 23:27:00 ot_train.py:351 step:7K smpl:109K ep:146 epch:3.65 loss:0.193 grdn:13.723 lr:1.0e-05 updt_s:0.074 data_s:0.086
+INFO 2025-12-13 23:27:33 ot_train.py:351 step:7K smpl:112K ep:150 epch:3.75 loss:0.190 grdn:13.482 lr:1.0e-05 updt_s:0.074 data_s:0.087
+INFO 2025-12-13 23:28:05 ot_train.py:351 step:7K smpl:115K ep:154 epch:3.86 loss:0.187 grdn:13.293 lr:1.0e-05 updt_s:0.074 data_s:0.086
+INFO 2025-12-13 23:28:38 ot_train.py:351 step:7K smpl:118K ep:159 epch:3.97 loss:0.184 grdn:12.861 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:29:11 ot_train.py:351 step:8K smpl:122K ep:163 epch:4.08 loss:0.183 grdn:12.778 lr:1.0e-05 updt_s:0.075 data_s:0.094
+INFO 2025-12-13 23:29:42 ot_train.py:351 step:8K smpl:125K ep:167 epch:4.18 loss:0.175 grdn:12.556 lr:1.0e-05 updt_s:0.074 data_s:0.078
+INFO 2025-12-13 23:30:13 ot_train.py:351 step:8K smpl:128K ep:172 epch:4.29 loss:0.174 grdn:12.442 lr:1.0e-05 updt_s:0.074 data_s:0.081
+INFO 2025-12-13 23:30:13 ot_train.py:361 Checkpoint policy after step 8000
+INFO 2025-12-13 23:30:45 ot_train.py:351 step:8K smpl:131K ep:176 epch:4.40 loss:0.168 grdn:11.841 lr:1.0e-05 updt_s:0.074 data_s:0.078
+INFO 2025-12-13 23:31:16 ot_train.py:351 step:8K smpl:134K ep:180 epch:4.50 loss:0.166 grdn:11.756 lr:1.0e-05 updt_s:0.075 data_s:0.079
+INFO 2025-12-13 23:31:46 ot_train.py:351 step:9K smpl:138K ep:184 epch:4.61 loss:0.163 grdn:11.575 lr:1.0e-05 updt_s:0.074 data_s:0.079
+INFO 2025-12-13 23:32:17 ot_train.py:351 step:9K smpl:141K ep:189 epch:4.72 loss:0.160 grdn:11.458 lr:1.0e-05 updt_s:0.074 data_s:0.079
+INFO 2025-12-13 23:32:48 ot_train.py:351 step:9K smpl:144K ep:193 epch:4.83 loss:0.158 grdn:11.629 lr:1.0e-05 updt_s:0.074 data_s:0.080
+INFO 2025-12-13 23:33:19 ot_train.py:351 step:9K smpl:147K ep:197 epch:4.93 loss:0.157 grdn:11.227 lr:1.0e-05 updt_s:0.074 data_s:0.080
+INFO 2025-12-13 23:33:52 ot_train.py:351 step:9K smpl:150K ep:202 epch:5.04 loss:0.153 grdn:11.130 lr:1.0e-05 updt_s:0.074 data_s:0.089
+INFO 2025-12-13 23:34:24 ot_train.py:351 step:10K smpl:154K ep:206 epch:5.15 loss:0.153 grdn:11.353 lr:1.0e-05 updt_s:0.074 data_s:0.085
+INFO 2025-12-13 23:34:57 ot_train.py:351 step:10K smpl:157K ep:210 epch:5.25 loss:0.149 grdn:11.072 lr:1.0e-05 updt_s:0.074 data_s:0.092
+INFO 2025-12-13 23:35:30 ot_train.py:351 step:10K smpl:160K ep:214 epch:5.36 loss:0.148 grdn:11.231 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:35:30 ot_train.py:361 Checkpoint policy after step 10000
+INFO 2025-12-13 23:36:03 ot_train.py:351 step:10K smpl:163K ep:219 epch:5.47 loss:0.147 grdn:10.556 lr:1.0e-05 updt_s:0.074 data_s:0.087
+INFO 2025-12-13 23:36:37 ot_train.py:351 step:10K smpl:166K ep:223 epch:5.58 loss:0.145 grdn:10.762 lr:1.0e-05 updt_s:0.074 data_s:0.092
+INFO 2025-12-13 23:37:09 ot_train.py:351 step:11K smpl:170K ep:227 epch:5.68 loss:0.141 grdn:10.299 lr:1.0e-05 updt_s:0.073 data_s:0.088
+INFO 2025-12-13 23:37:42 ot_train.py:351 step:11K smpl:173K ep:232 epch:5.79 loss:0.142 grdn:10.614 lr:1.0e-05 updt_s:0.073 data_s:0.092
+INFO 2025-12-13 23:38:15 ot_train.py:351 step:11K smpl:176K ep:236 epch:5.90 loss:0.138 grdn:10.053 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:38:50 ot_train.py:351 step:11K smpl:179K ep:240 epch:6.01 loss:0.138 grdn:9.718 lr:1.0e-05 updt_s:0.074 data_s:0.102
+INFO 2025-12-13 23:39:23 ot_train.py:351 step:11K smpl:182K ep:245 epch:6.11 loss:0.138 grdn:10.288 lr:1.0e-05 updt_s:0.073 data_s:0.088
+INFO 2025-12-13 23:39:55 ot_train.py:351 step:12K smpl:186K ep:249 epch:6.22 loss:0.134 grdn:9.762 lr:1.0e-05 updt_s:0.073 data_s:0.089
+INFO 2025-12-13 23:40:28 ot_train.py:351 step:12K smpl:189K ep:253 epch:6.33 loss:0.132 grdn:9.628 lr:1.0e-05 updt_s:0.074 data_s:0.088
+INFO 2025-12-13 23:41:00 ot_train.py:351 step:12K smpl:192K ep:257 epch:6.43 loss:0.132 grdn:10.098 lr:1.0e-05 updt_s:0.073 data_s:0.089
+INFO 2025-12-13 23:41:00 ot_train.py:361 Checkpoint policy after step 12000
+INFO 2025-12-13 23:41:34 ot_train.py:351 step:12K smpl:195K ep:262 epch:6.54 loss:0.130 grdn:9.510 lr:1.0e-05 updt_s:0.074 data_s:0.085
+INFO 2025-12-13 23:42:07 ot_train.py:351 step:12K smpl:198K ep:266 epch:6.65 loss:0.129 grdn:9.113 lr:1.0e-05 updt_s:0.074 data_s:0.091
+INFO 2025-12-13 23:42:39 ot_train.py:351 step:13K smpl:202K ep:270 epch:6.76 loss:0.128 grdn:9.568 lr:1.0e-05 updt_s:0.074 data_s:0.090
+INFO 2025-12-13 23:43:12 ot_train.py:351 step:13K smpl:205K ep:275 epch:6.86 loss:0.127 grdn:8.973 lr:1.0e-05 updt_s:0.073 data_s:0.088
+INFO 2025-12-13 23:43:45 ot_train.py:351 step:13K smpl:208K ep:279 epch:6.97 loss:0.122 grdn:9.198 lr:1.0e-05 updt_s:0.073 data_s:0.092
+INFO 2025-12-13 23:44:18 ot_train.py:351 step:13K smpl:211K ep:283 epch:7.08 loss:0.123 grdn:8.922 lr:1.0e-05 updt_s:0.074 data_s:0.092
+INFO 2025-12-13 23:44:50 ot_train.py:351 step:13K smpl:214K ep:287 epch:7.18 loss:0.121 grdn:8.893 lr:1.0e-05 updt_s:0.074 data_s:0.083
+INFO 2025-12-13 23:45:21 ot_train.py:351 step:14K smpl:218K ep:292 epch:7.29 loss:0.120 grdn:8.578 lr:1.0e-05 updt_s:0.073 data_s:0.083
+INFO 2025-12-13 23:45:52 ot_train.py:351 step:14K smpl:221K ep:296 epch:7.40 loss:0.121 grdn:8.636 lr:1.0e-05 updt_s:0.074 data_s:0.081
+INFO 2025-12-13 23:46:24 ot_train.py:351 step:14K smpl:224K ep:300 epch:7.51 loss:0.120 grdn:8.734 lr:1.0e-05 updt_s:0.073 data_s:0.087
+INFO 2025-12-13 23:46:24 ot_train.py:361 Checkpoint policy after step 14000
+INFO 2025-12-13 23:46:56 ot_train.py:351 step:14K smpl:227K ep:305 epch:7.61 loss:0.119 grdn:8.752 lr:1.0e-05 updt_s:0.073 data_s:0.080
+INFO 2025-12-13 23:47:28 ot_train.py:351 step:14K smpl:230K ep:309 epch:7.72 loss:0.117 grdn:8.583 lr:1.0e-05 updt_s:0.073 data_s:0.084
+INFO 2025-12-13 23:48:00 ot_train.py:351 step:15K smpl:234K ep:313 epch:7.83 loss:0.118 grdn:8.486 lr:1.0e-05 updt_s:0.073 data_s:0.087
+INFO 2025-12-13 23:48:31 ot_train.py:351 step:15K smpl:237K ep:317 epch:7.94 loss:0.114 grdn:8.152 lr:1.0e-05 updt_s:0.074 data_s:0.082
+INFO 2025-12-13 23:49:05 ot_train.py:351 step:15K smpl:240K ep:322 epch:8.04 loss:0.117 grdn:8.983 lr:1.0e-05 updt_s:0.073 data_s:0.095
+INFO 2025-12-13 23:49:05 ot_train.py:361 Checkpoint policy after step 15000
+INFO 2025-12-13 23:49:06 ot_train.py:430 End of training
+Traceback (most recent call last):
+  File "/opt/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 407, in hf_raise_for_status
+    response.raise_for_status()
+  File "/opt/venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://huggingface.co/api/repos/create
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/venv/bin/lerobot-train", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 444, in main
+    train()
+  File "/workspace/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/lerobot/src/lerobot/scripts/lerobot_train.py", line 434, in train
+    unwrapped_policy.push_model_to_hub(cfg)
+  File "/workspace/lerobot/src/lerobot/policies/pretrained.py", line 211, in push_model_to_hub
+    repo_id = api.create_repo(
+              ^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 3779, in create_repo
+    raise err
+  File "/opt/venv/lib/python3.12/site-packages/huggingface_hub/hf_api.py", line 3766, in create_repo
+    hf_raise_for_status(r)
+  File "/opt/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 471, in hf_raise_for_status
+    raise _format(HfHubHTTPError, message, response) from e
+huggingface_hub.errors.HfHubHTTPError: (Request ID: Root=1-693dfb73-2ca53b5b32437ee7604f3706;abca2d2e-fdcd-4a17-b685-5205e8569656)
+
+403 Forbidden: You don't have the rights to create a model under the namespace "Abubakar17".
+Cannot access content at: https://huggingface.co/api/repos/create.
+Make sure your token has the correct permissions.
