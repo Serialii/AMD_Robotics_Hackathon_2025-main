@@ -79,6 +79,18 @@ graph TD
 * **ACT Policy:** Action Chunking Transformer was used for its superior performance in sequence modeling.
 * **Strategic Policy Split:** Separate policies were trained for each object to maximize **giving stability**, but a single generalized policy was used for **taking** objects back to maximize training efficiency.
 
+For mission 1: 
+model [https://huggingface.co/Abubakar17/so101-policy]
+dataset [https://huggingface.co/datasets/Abubakar17/record-test-5]
+
+For mission 2:
+There were 2 ways to inference to deal with the inference
+ 1. model orchestration
+ 2. policy orchestration
+
+We tried both methods and all the datasets and models can be found here[https://huggingface.co/Abubakar17]
+
+
 ### Inference Stack
 * **Platform:** Dell Pro Max 16 Laptop (Ryzen AI 9 HX 370).
 * **LLM:** **Ollama (Llama 3.2)** provides rapid, local conversational intelligence.
@@ -135,6 +147,4 @@ ollama pull llama_3.2
 streamlit run jarvis.py
 
 ```
-## Additional Links
-All the models and the dataset can be found in huggingface.co/Abubakar17.
 
